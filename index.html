@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0;url=https://shohan.retrofable.com">
+    <script>
+        // OPTIMIZED for GitHub Pages: Instant redirect
+        // Preserves path (e.g. /about) and query params (e.g. ?id=123)
+        (function () {
+            var oldUrl = window.location;
+            // shohan.retrofable.com
+            var newOrigin = "https://shohan.retrofable.com";
+
+            // Construct the new URL maintaining the path and search params
+            // If you are hosting at a subdirectory (e.g. user.github.io/repo), 
+            // you might need to adjust 'pathname' handling here. 
+            // Assuming custom domain or root usage:
+            var newUrl = newOrigin + oldUrl.pathname + oldUrl.search + oldUrl.hash;
+
+            // Use replace to ensure the back button doesn't get stuck in a loop
+            window.location.replace(newUrl);
+        })();
+    </script>
+</head>
+
+<body>
+    <a href="https://shohan.retrofable.com">Click here if not redirected...</a>
+</body>
+
+</html>

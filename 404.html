@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // OPTIMIZED for GitHub Pages 404 Hack
+        // GitHub Pages returns this 404.html for any path it doesn't find.
+        // We use this to capture "Deep Links" (e.g. /blog/post-1) and redirect them.
+        (function () {
+            var oldUrl = window.location;
+            var newOrigin = "https://shohan.retrofable.com";
+            var newUrl = newOrigin + oldUrl.pathname + oldUrl.search + oldUrl.hash;
+            window.location.replace(newUrl);
+        })();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
